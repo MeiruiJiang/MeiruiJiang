@@ -1,0 +1,273 @@
+<html class="nuseg">
+    
+    <head>
+        <title>Histology Nuclei Segmentation Dataset</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+    
+        <style type="text/css">
+            body {
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight:300;
+                font-size:19px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 1100px;
+            }
+            h1 {
+                font-weight:300;
+            }
+        
+            .disclaimerbox {
+                background-color: #eee;
+                border: 1px solid #eeeeee;
+                border-radius: 10px ;
+                -moz-border-radius: 10px ;
+                -webkit-border-radius: 10px ;
+                padding: 20px;
+            }
+            
+            video.header-vid {
+                height: 140px;
+                border: 1px solid black;
+                border-radius: 10px ;
+                -moz-border-radius: 10px ;
+                -webkit-border-radius: 10px ;
+            }
+            
+            img.header-img {
+                height: 140px;
+                border: 1px solid black;
+                border-radius: 10px ;
+                -moz-border-radius: 10px ;
+                -webkit-border-radius: 10px ;
+            }
+            
+            img.rounded {
+                border: 0px solid #eeeeee;
+                border-radius: 10px ;
+                -moz-border-radius: 10px ;
+                -webkit-border-radius: 10px ;
+            }
+            
+            a:link,a:visited
+            {
+                color: #1367a7;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #208799;
+            }
+            
+            td.dl-link {
+                height: 160px;
+                text-align: center;
+                font-size: 22px;
+            }
+            
+            .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow:
+                        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                        5px 5px 0 0px #fff, /* The second layer */
+                        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                        10px 10px 0 0px #fff, /* The third layer */
+                        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                        15px 15px 0 0px #fff, /* The fourth layer */
+                        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                        20px 20px 0 0px #fff, /* The fifth layer */
+                        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                        25px 25px 0 0px #fff, /* The fifth layer */
+                        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+                margin-left: 10px;
+                margin-right: 45px;
+            }
+            
+            .paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow:
+                        0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+            
+                margin-left: 10px;
+                margin-right: 45px;
+            }
+            
+            .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow:
+                        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                        5px 5px 0 0px #fff, /* The second layer */
+                        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                        10px 10px 0 0px #fff, /* The third layer */
+                        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-right: 30px;
+                margin-bottom: 5px;
+            }
+            
+            .vert-cent {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+            hr
+            {
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            }
+            </style>
+      </head>
+        <br>
+        <br>
+        <header>
+            <div class="container" style="text-align: center;">
+                <h1>A Multi-site Dataset for Histology Nuclei Segmentation</h1>
+                <p> This is a well-organized multi-site dataset for histology nuclei segmentation, which contains H&E stained tissue images with segmentation masks collected from three public datasets. </p>
+                <p> It can support research in various problem settings with need of multi-site data, such as <i>Federated Learning</i>, <i>Domain Generalization</i>, <i>Multi-site Learning</i> and <i>Continual Learning</i>, etc. </p>
+                <hr>
+            </div>
+        </header>
+
+      <body data-gr-c-s-loaded="true">
+            <h3>(1) Details of data</h3>
+            The details of sample number and split are summarized in the tabel below:
+            <br>
+            <table align="center" width="100%">
+              <tbody>
+                    <tr>
+                        <td align="center"><img class="round" style="width:50%" src="fig/sample.png"></td>	
+                  </tr>
+            </tbody>
+            </table>
+            <br> 
+        
+
+             Among these data:
+             <ul>
+               <li>Samples of Site A,B,C,D are from  <a href="https://monusac-2020.grand-challenge.org/Home/"> MoNuSAC2020 </a> challenge dataset [1].</li>
+               <li>Samples of Site E are from  <a href="https://monuseg.grand-challenge.org/Data/"> MoNuSAC2018 </a> challenge dataset [2].</li>
+               <li>Samples of Site F are from  <a href="https://github.com/PeterJackNaylor/DRFNS/"> Deep Regression For Nuclei Segmentation </a> (DRFNS) [3].</li>
+             </ul>
+            
+    
+            <h3>(2) Visualization of samples <br></h3>
+            The appearance differences across the six sites can be displied in the figure below:
+            <br> 
+            <br>
+                <table align="center" width="100%">
+                  <tbody>
+                        <tr>
+                            <td align="center"><img class="round" style="width:85%" src="fig/NucSeg_imgs.png"></td>	
+                      </tr>
+                </tbody>
+                </table>
+            <br> 
+    
+            <h3>(3) Preprocessing steps <br></h3>
+            Based on the original data trian-test split, we further split out 20% of training data for validation. <br>
+            We have converted the annotation files fom '.xml' to '.png' format. For preprocessing, we resize all samples in the six sites to size of 256x256.
+            
+          
+            
+            <h3>(4) Download preprocessed data </h3>
+            We gather and process the data under the creative commons license (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-NC-SA 4.0</a>).
+            For our preprocessed data, please download from <a href="https://drive.google.com/file/d/1BzgKLquBSBP6fkbEUOItBVK-Jbp6_BlK/view?usp=sharing">here</a>.
+            <br>
+            <br>
+        
+  
+            <h3>Citation</h3>
+                If this dataset is helpful for your research, please consider citing:
+                
+    <pre>
+    <code style="font-size:80%;">
+    @article{jiang2021harmofl,
+        title={HarmoFL: Harmonizing Local and Global Drifts in Federated Learning on Heterogeneous Medical Images},
+        author={Jiang, Meirui and Wang, Zirui and Dou, Qi},
+        journal={arXiv preprint arXiv:2112.10775},
+        year={2021}
+    }
+    </code>
+    </pre>
+<!-- 
+            <table align="center" width="100%">
+                <tbody>
+            <tr><td width="100%"><left> -->
+                <!-- <h2>Citation</h2>
+                If this dataset is helpful for your research, please consider citing: -->
+            <!-- <pre>
+            <code>
+            @article{jiang2021harmofl,
+                title={HarmoFL: Harmonizing Local and Global Drifts in Federated Learning on Heterogeneous Medical Images},
+                author={Jiang, Meirui and Wang, Zirui and Dou, Qi},
+                journal={arXiv preprint arXiv:2112.10775},
+                year={2021}
+            }
+            </code>
+            </pre>
+            
+            </left></td></tr>
+            </tbody></table> -->
+
+
+            <h3>Acknowledgements</h3>
+                  We sincerely thank the organizers and collaborators of MoNuSAC2020 Challenge [1], MoNuSAC2018 Challenge [2] and DRFNS [3] for sharing the data for public use.
+ 
+                <!-- <table align="center" width="100%">
+                  <tbody>
+                <tr><td width="100%"><left>
+                  <h2>Acknowledgements</h2>
+                  We sincerely thank the organizers and collaborators of MoNuSAC2020 Challenge [1], MoNuSAC2018 Challenge [2] and DRFNS [3] for sharing the data for public use.
+                </left></td></tr>
+                </tbody></table>  -->
+    
+             
+            <br>
+            <br>
+    
+            <h3>Contact</h3>
+                  For further question about the dataset, please contact <a href = "mailto: mrjiang@cse.cuhk.edu.hk">Meirui Jiang</a>.
+                <!-- <table align="center" width="1100px">
+                  <tbody>
+                <tr><td width="400px"><left>
+                  <h2>Contact</h2>
+                  For further question about the dataset, please contact <a href = "mailto: mrjiang@cse.cuhk.edu.hk">Meirui Jiang</a>.
+                </left></td></tr>
+                </tbody></table>
+            <br>
+            <br> -->
+    
+            <h3>Reference</h3>
+               [1] Verma, Ruchika, Neeraj Kumar, Abhijeet Patil, Nikhil Cherian Kurian, Swapnil Rane, Simon Graham, Quoc Dang Vu et al. "MoNuSAC2020: A Multi-organ Nuclei Segmentation and Classification Challenge." IEEE Transactions on Medical Imaging (2021).
+               <br>
+               [2] Kumar, N., Verma, R., Anand, D., Zhou, Y., Onder, O. F., Tsougenis, E., ... & Sethi, A. (2019). A multi-organ nucleus segmentation challenge. IEEE transactions on medical imaging, 39(5), 1380-1391.
+               <br>
+               [3] Naylor, Peter, Marick Laé, Fabien Reyal, and Thomas Walter. "Segmentation of nuclei in histopathology images by deep regression of the distance map." IEEE transactions on medical imaging 38, no. 2 (2018): 448-459.
+                <!-- <table align="center" width="1100px">
+                  <tbody>
+                <tr><td width="400px"><left>
+                  <h2>Reference</h2>
+               [1] Verma, Ruchika, Neeraj Kumar, Abhijeet Patil, Nikhil Cherian Kurian, Swapnil Rane, Simon Graham, Quoc Dang Vu et al. "MoNuSAC2020: A Multi-organ Nuclei Segmentation and Classification Challenge." IEEE Transactions on Medical Imaging (2021).
+               <br>
+               [2] Kumar, N., Verma, R., Anand, D., Zhou, Y., Onder, O. F., Tsougenis, E., ... & Sethi, A. (2019). A multi-organ nucleus segmentation challenge. IEEE transactions on medical imaging, 39(5), 1380-1391.
+               <br>
+               [3] Naylor, Peter, Marick Laé, Fabien Reyal, and Thomas Walter. "Segmentation of nuclei in histopathology images by deep regression of the distance map." IEEE transactions on medical imaging 38, no. 2 (2018): 448-459.
+                </left></td></tr>
+                </tbody></table> -->
+            <br>
+            <br>
+    
+    
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=TTevqrFw89KOHMCt_QZbQQBH_D2qYcwHnKao1p1ozQ8'></script>
+
+        <!-- <p> -->
+              <!-- <div id="clustrmaps-widget" style="width:40%"> -->
+            <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CSzIxZl-T7aE53Bq1mmlzOfJyB0IeZY7CzBYiCrtD3U&cl=ffffff&w=a"></script> -->
+        <!-- </div>   -->
+        <footer>
+        <p style="text-align:center;font-size:small;">
+            Design and source code from <a style="font-size:small;" href="https://liuquande.github.io/SAML/", target="_blank"> Multi-site Dataset for Prostate MRI Segmentation Website</a>.
+          </a></p>
+        </footer>
+    
+    </body></html>

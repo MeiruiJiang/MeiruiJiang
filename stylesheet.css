@@ -152,7 +152,10 @@ span.highlight {
 
 .paper-item-img {
   padding-left:20px;
-  padding-right:20px;
-  width:25%;vertical-align:middle";
+  padding-right:10px;
+  width:35%;vertical-align:middle";
 }
 
+.paper-item-img img{
+  width: 100%; height: auto; max-width: 100%; 
+}
