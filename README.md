@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 <img src="https://github-readme-stats.vercel.app/api?username=MeiruiJiang&count_private=true&show_icons=true&layout=compact&hide=prs&hide_title=true" height="120"> 
 
-Hi 👋! Here is **Meirui Jiang**, second year Ph.D. student in the [CSE](http://www.cse.cuhk.edu.hk/), [CUHK](http://www.cuhk.edu.hk/). 
+Hi 👋! Here is **Meirui Jiang**, third year Ph.D. student in the [CSE](http://www.cse.cuhk.edu.hk/), [CUHK](http://www.cuhk.edu.hk/). 
 
 My research interest lies in computer vision and machine learning with applications for medical image analysis. I aim to promote the applicability (regarding explainability, privacy and generalizability) of AI research for healthcare. Recently I focus on federated learning.
 
