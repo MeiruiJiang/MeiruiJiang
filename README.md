@@ -14,9 +14,11 @@ Here are some ideas to get you started:
 -->
 <img src="https://github-readme-stats.vercel.app/api?username=MeiruiJiang&count_private=true&show_icons=true&layout=compact&hide=prs&hide_title=true" height="120"> 
 
-Hi 👋! Here is **Meirui Jiang**, third year Ph.D. student in the [CSE](http://www.cse.cuhk.edu.hk/), [CUHK](http://www.cuhk.edu.hk/). 
+Hi 👋! Here is **Meirui Jiang**, final year Ph.D. student in the [CSE](http://www.cse.cuhk.edu.hk/), [CUHK](http://www.cuhk.edu.hk/). 
 
-My research interest lies in computer vision and machine learning with applications for medical image analysis. I aim to promote the applicability (regarding explainability, privacy and generalizability) of AI research for healthcare. Recently I focus on federated learning.
+My research centers around the intersection of machine learning and healthcare, with a particular focus on medical image analysis. I am driven by a strong desire to enhance the applicability of machine learning algorithms, with a focus on their robustness, efficiency, generalizability, reliability, and privacy. In particular, I am passionate about leveraging large distributed datasets to empower real-world applications in the healthcare domain. By exploring this interdisciplinary realm, I aim to contribute to advancing machine learning techniques and their transformative impact on healthcare practices. 
+
+I am always open to engaging in discussions and collaborations. Please feel free to reach out to me via email :)
 
 Please learn more about me from my [personal website](https://meiruijiang.github.io/MeiruiJiang/).
 
